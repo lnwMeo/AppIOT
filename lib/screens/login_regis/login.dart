@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'register.dart';
-import 'package:my_app_iot/views/home_page.dart';
+// import 'package:my_app_iot/screens/home_page.dart';
+import '../bottonnav.dart';
+
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -107,7 +109,7 @@ class _LoginPageState extends State<LoginPage> {
         onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => HomeScereen()),
+                MaterialPageRoute(builder: (context) => BottonNav()),
               );
             },
         child: Text(
