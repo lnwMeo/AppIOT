@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'screens/login_regis/login.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter/services.dart';
 // import './screens/bottonnav.dart';
 
 // import 'MoneyBox.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
   runApp(MyApp());
 }
 

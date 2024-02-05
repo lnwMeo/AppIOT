@@ -38,11 +38,14 @@ dependencies:
   intl: ^0.19.0
   google_fonts: ^6.1.0
   syncfusion_flutter_charts: ^24.1.46
+  sticky_headers: "^0.3.0"
+  font_awesome_flutter: ^10.7.0
+
 
 flutter_launcher_icons:
   android: "launcher_icon"
   ios: true
-  image_path: "image/Logore.png"
+  image_path: "image/Logoapp.png"
   min_sdk_android: 21
 
 dev_dependencies:

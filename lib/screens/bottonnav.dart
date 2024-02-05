@@ -5,7 +5,7 @@ import 'home_page.dart';
 import 'Add_page.dart';
 import 'detct_page.dart';
 import 'notify_page.dart';
-import 'setting_page.dart';
+import 'setting_page_page.dart';
 
 class BottonNav extends StatefulWidget {
   int selectedIndex = 0;
@@ -42,7 +42,11 @@ class _BottonNavState extends State<BottonNav> {
             // backgroundColor: Colors.indigo,
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.add),
+            icon: Icon(
+              Icons.add_circle_outline,
+              // size: 20,
+              // color: Colors.cyan,
+            ),
             label: 'Add',
             // backgroundColor: Colors.indigo,
           ),
@@ -58,12 +62,12 @@ class _BottonNavState extends State<BottonNav> {
           ),
         ],
         type: BottomNavigationBarType.fixed,
-        backgroundColor: Colors.indigo,
+        backgroundColor: Colors.indigo.shade900,
         currentIndex: currentIndex,
         selectedItemColor: Colors.white, // สีของไอคอนที่ถูกเลือก
         unselectedItemColor: Colors.grey,
-        showSelectedLabels: true, 
-        showUnselectedLabels: false, 
+        showSelectedLabels: true,
+        showUnselectedLabels: false,
         onTap: (index) => setState(() => currentIndex = index),
       ),
     );

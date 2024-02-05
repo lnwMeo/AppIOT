@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import '../screens/AppbarFE.dart';
-import '../widget/cart_ climate.dart';
+// import '../widget/cart_ climate.dart';
 import '../widget/cart_temhum.dart';
 import '../widget/cart_charts.dart';
+import '../widget/cart_selectgroupshow.dart';
 import 'package:google_fonts/google_fonts.dart';
+// import 'package:sticky_headers/sticky_headers.dart';
 
 class HomeScereen extends StatelessWidget {
   var height, width;
@@ -33,29 +35,34 @@ class HomeScereen extends StatelessWidget {
                   child: Column(
                 children: [
                   AppbarFE(),
+                  SizedBox(
+                    height: 5,
+                  ),
+                  SelectGroupshow(),
+
                   Column(
                     children: [
-                      Container(
-                        padding: EdgeInsets.only(left: 15, top: 18),
-                        child: Align(
-                          alignment: Alignment.centerLeft,
-                          child: Text(
-                            'สภาพอากาศวันนี้',
-                            style: GoogleFonts.prompt(
-                              textStyle: TextStyle(
-                                color: Colors.white,
-                                fontSize: 20,
-                                fontWeight: FontWeight.normal,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                      Cartclimate(),
+                      // Container(
+                      //   padding: EdgeInsets.only(left: 15, top: 10),
+                      //   child: Align(
+                      //     alignment: Alignment.centerLeft,
+                      //     child: Text(
+                      //       'สภาพอากาศวันนี้',
+                      //       style: GoogleFonts.prompt(
+                      //         textStyle: TextStyle(
+                      //           color: Colors.white,
+                      //           fontSize: 20,
+                      //           fontWeight: FontWeight.normal,
+                      //         ),
+                      //       ),
+                      //     ),
+                      //   ),
+                      // ),
+                      // Cartclimate(),
                       Column(
                         children: [
                           Container(
-                            padding: EdgeInsets.only(left: 15),
+                            padding: EdgeInsets.only(left: 15, top: 5),
                             child: Align(
                               alignment: Alignment.centerLeft,
                               child: Text(
@@ -105,6 +112,7 @@ class HomeScereen extends StatelessWidget {
                       CartCharts(),
                     ],
                   ),
+                  // ),
                 ],
               )),
             ),

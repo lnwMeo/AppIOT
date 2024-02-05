@@ -93,7 +93,7 @@ class DetctScreens extends StatelessWidget {
                         ],
                       )
                     ],
-                  )
+                  ),
                 ],
               )),
             ),

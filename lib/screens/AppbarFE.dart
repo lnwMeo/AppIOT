@@ -8,11 +8,9 @@ class AppbarFE extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(),
-      // height: height * 0.10,
-      // width: width,
       child: Column(children: [
         Padding(
-          padding: EdgeInsets.only(top: 20, left: 15, right: 15),
+          padding: EdgeInsets.only(top: 35, left: 15, right: 15),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
